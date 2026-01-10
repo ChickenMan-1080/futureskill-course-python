@@ -6,7 +6,7 @@
 ## เครื่องมือที่ใช้
 
  - **Language :** python 3.13.9
- - **Libraries :**  sys , tkinter(Tk , simpledialog , messagebox)
+ - **Libraries :**  sys , tkinter ( Tk , simpledialog , messagebox )
  - **Text Editor :** Visual Studio Code
  - **AI Assistant :** Gemini 3
  - **Markdown Editor :** StackEdit.io
