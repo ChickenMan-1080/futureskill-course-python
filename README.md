@@ -4,6 +4,12 @@
 ที่มีการปรับปรุงต่อหลังจากส่งไปแล้วเพื่อความเข้าแล้วให้เห็นถึงปัญหาที่อาจเกิด
 โดยที่โจทย์ของ class ก่อนมีการปรับปรุง คือ **"ให้ผู้เรียนเขียนโปรแกรมคำนวณหาพื้นที่สี่เหลี่ยมผืนผ้าโดยใช้ Library tkinter"**  
 
+## สารบัญ
+
+ - [เครื่องมือที่ใช้](#%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89)
+ - [ภาพรวมการทำงาน](#%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B3%E0%B8%87%E0%B8%B2%E0%B8%99)
+ - [ปัญหาที่เจอและวิธีแก้ไข](#%E0%B8%9B%E0%B8%B1%E0%B8%8D%E0%B8%AB%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B9%81%E0%B8%81%E0%B9%89%E0%B9%84%E0%B8%82)
+ - [สิ่งที่ได้เรียนรู้ใน Project](#%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B9%83%E0%B8%99-project)
 ## เครื่องมือที่ใช้
 
  - **Language :** python 3.13.9
@@ -155,19 +161,23 @@
 
  - **การใช้งาน Libraries  module** 
  
-การจัดการ Library ที่เกี่ยวข้อง ดึง module ของ library tkinter มาใช้ โดยไม่ต้อง import มาทั้งหมด เข้าใจถึงข้อจำการของ module
+การจัดการ **Library** ที่เกี่ยวข้อง ดึง **Module** ของ **library tkinter** มาใช้ โดยไม่ต้อง import มาทั้งหมด วิธีการเรียก **API** เพื่อทำงาน และเข้าใจข้อจำกัดของ **Module** เช่น **messagebox** ที่รับค่าและแสดงผลได้เฉพาะ **string**
  ##
  - **โครงสร้าง Logic และลำดับการทำงาน**    
  
  ได้ทำความเข้าใจ logic การทำงานของ python และได้เรียนรู้การเขียนลักษณะการเขียน **syntax** **Python** เข้าใจภาพรวมคร่าวๆลักษณะภาษาของ Python ที่ทำงานแบบ
  **OOP(Object-Oriented Programming)** ที่มองเป็นเหมือนวัตถุเป็นจุดศูนย์รวมข้อมูลที่ลดความซับซ้อนของโค้ด และ สามารถนำมาใช้งานซ้ำได้ เช่น **Function rec** ที่ parameter รับค่า **Numeric** เพื่อคำนวณสูตรหาพื้นที่สี่เหลี่ยมผืนผ้า
 
-
-    def rec(width,length):
-        loresult = width * length
-        return loresult
+   
+       ''' def rec(width,length):
+               loresult = width * length
+               return loresult '''
 
 และการเรียกใช้ Function ที่สามารถนำมาใช้ต่อได้โดยการใช้ตัวแปรมารับค่า return ของ Function เปิดเอาคำตอบนั้นไปแสดงผลบนหน้า GUI 
 
-    result =  rec(input_width,input_length)
-    messagebox.showinfo('Answer','The area of Rectangle is '  +  str(result))
+    '''
+        result =  rec(input_width,input_length)
+        messagebox.showinfo('Answer','The area of Rectangle is '  +  str(result))'''
+        
+
+##
