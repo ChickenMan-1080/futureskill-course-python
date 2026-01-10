@@ -1,4 +1,3 @@
-
 # Python mini Game
 
 [Script](https://github.com/ChickenMan-1080/futureskill-course-python/blob/main/Python%20mini%20Game.py) นี้คืองานส่งของ Course เรียน **Future Skill Upskill Python programming**
@@ -186,10 +185,3 @@
  - **ลงมือทำจริง**
 
 การได้ทำเองจริงๆได้เจอปัญหาจริงทำให้เรียนรู้เร็วกว่าศึกษาทฤษฎีอย่างเดียว ได้นั่งคิดทำความเข้าใจตรรกะการทำงาน Error ที่เกิดแต่ละส่วนลักษณะของ Error ช่วยเพิ่มความเข้าใจอย่างมาก เรียนรู้ศัพท์ใหม่ๆจากการเรียนใน Course เครื่องมือที่มี Built-in Library วิธีใช้เครื่องมือได้เรียนร้วิธีการใหม่ๆจากการใช้ **AI** เข้ามาช่วยอธิบายการทำงาน คำศัพท์ และ นิยามของศัพท์ 
-
-    '''
-        result =  rec(input_width,input_length)
-        messagebox.showinfo('Answer','The area of Rectangle is '  +  str(result))'''
-        
-
-##
