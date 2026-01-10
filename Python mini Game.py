@@ -13,7 +13,7 @@ while True :
         while True:
             input_width = simpledialog.askinteger('Width Input','Enter width : ')
             input_length = simpledialog.askinteger('Length Input','Enter length : ')
-            if input_width == None or input_length == None :
+            if input_width is None or input_length is None :
                 messagebox.showinfo('Hmmm..','Are you tryna cancel? i will bring you to where you can end program')
                 break
             elif input_width == 6 and input_length == 7:
@@ -41,5 +41,3 @@ while True :
     else :
         messagebox.showinfo('Huh!?','There are 2 options , follow what it said')
         
-    
-
