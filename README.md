@@ -1,7 +1,7 @@
 # Python mini Game
 [Script](https://github.com/ChickenMan-1080/futureskill-course-python/blob/main/Python%20mini%20Game.py) นี้คืองานส่งของ Course เรียน **Future Skill Upskill Python programming**
 ที่มีการปรับปรุงต่อหลังจากส่งไปแล้วเพื่อความเข้าแล้วให้เห็นถึงปัญหาที่อาจเกิด
-โดยที่โจทย์  คือ **"ให้ผู้เรียนเขียนโปรแกรมคำนวณหาพื้นที่สี่เหลี่ยมผืนผ้าโดยใช้ Library tkinter"**  
+โดยที่โจทย์ของ class ก่อนมีการปรับปรุง คือ **"ให้ผู้เรียนเขียนโปรแกรมคำนวณหาพื้นที่สี่เหลี่ยมผืนผ้าโดยใช้ Library tkinter"**  
 
 ## เครื่องมือที่ใช้
 
