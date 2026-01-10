@@ -6,8 +6,6 @@
 
 ## เครื่องมือที่ใช้
 
- 
-
  - **Language :** python 3.13.9
  - **Libraries :**  sys , tkinter ( Tk , simpledialog , messagebox )
  - **Text Editor :** Visual Studio Code
@@ -156,7 +154,20 @@
 ## สิ่งที่ได้เรียนรู้ใน Project
 
  - **การใช้งาน Libraries  module** 
- ได้ลองใช้ import library ที่เกี่ยวข้อง และ ดึง module ของ library tkinter มาใช้ โดยไม่ต้อง import มาทั้งหมด ได้ลองใช้ API เพื่อใช้คำสั่งในการเขียนของ library tkinter และ sys เรียนรู้ว่าบาง module มีข้อจำกัด เช่น massagebox ที่รับ parameter ได้แค่ **string** 
  
- - **ฝึกวางลำดับการทำงาน**    
- ได้ทำความเข้าใจ logic การทำงานของ python และได้เรียนรู้การเขียนลักษณะการเขียน **syntax** **Python** เข้าใจภาพรวมคร่าวๆลักษณะภาษาของ Python ที่ทำงานแบบ **OOP(Object-Oriented Programming)** ที่มองเป็นเหมือนวัตถุเป็นจุดศูนย์รวมข้อมูลที่สามารถนำมาใช้งานซ้ำๆได้ เช่น **Function rec** ที่ได้เขียนคำนวณสูตรหาพื้นที่สี่เหลี่ยมผืนผ้า
+การจัดการ Library ที่เกี่ยวข้อง ดึง module ของ library tkinter มาใช้ โดยไม่ต้อง import มาทั้งหมด เข้าใจถึงข้อจำการของ module
+ ##
+ - **โครงสร้าง Logic และลำดับการทำงาน**    
+ 
+ ได้ทำความเข้าใจ logic การทำงานของ python และได้เรียนรู้การเขียนลักษณะการเขียน **syntax** **Python** เข้าใจภาพรวมคร่าวๆลักษณะภาษาของ Python ที่ทำงานแบบ
+ **OOP(Object-Oriented Programming)** ที่มองเป็นเหมือนวัตถุเป็นจุดศูนย์รวมข้อมูลที่ลดความซับซ้อนของโค้ด และ สามารถนำมาใช้งานซ้ำได้ เช่น **Function rec** ที่ parameter รับค่า **Numeric** เพื่อคำนวณสูตรหาพื้นที่สี่เหลี่ยมผืนผ้า
+
+
+    def rec(width,length):
+        loresult = width * length
+        return loresult
+
+และการเรียกใช้ Function ที่สามารถนำมาใช้ต่อได้โดยการใช้ตัวแปรมารับค่า return ของ Function เปิดเอาคำตอบนั้นไปแสดงผลบนหน้า GUI 
+
+    result =  rec(input_width,input_length)
+    messagebox.showinfo('Answer','The area of Rectangle is '  +  str(result))
