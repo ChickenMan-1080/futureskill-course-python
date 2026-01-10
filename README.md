@@ -9,6 +9,7 @@
  - **Libraries :**  sys , tkinter(Tk , simpledialog , messagebox)
  - **Text Editor :** Visual Studio Code
  - **AI Assistant :** Gemini 3
+ - **Markdown Editor :** StackEdit.io
 
 ## ภาพรวมการทำงาน
  1. เมื่อรัน script จะมีหน้า GUI ถามความพร้อมของผู้ใช้ ซึ่งมีให้ตอบ 2 แบบคือ **y** หรือ **n** หากตอบ **"y"** ระบบทำงานต่อไป หากตอบ **"n"** จะจบการทำงานโปรแกรม ในกรณีที่พิมพ์นอกเหนือจากนั้นจะมีหน้าต่าง GUI ขึ้นมาเตือนแล้ววนกลับไปถามคำถามแรกใหม่
