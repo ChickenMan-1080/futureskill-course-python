@@ -8,22 +8,21 @@ def rec(width,length):
 root = Tk()
 root.withdraw()
 while True :
-    openBox = ''
     openBox = simpledialog.askstring('Rectangle calculate','Are you ready? y/n :')
     if openBox == 'y':
         while True:
-            input_width = ''
-            input_length = ''
             input_width = simpledialog.askinteger('Width Input','Enter width : ')
-            input_length = simpledialog.askinteger('Length Input','Ener length : ')
-            if input_width == 6 and input_length == 7:
+            input_length = simpledialog.askinteger('Length Input','Enter length : ')
+            if input_width == None or input_length == None :
+                messagebox.showinfo('Hmmm..','Are you tryna cancel? i will bring you to where you can end program')
+                break
+            elif input_width == 6 and input_length == 7:
                 messagebox.showinfo(' 6 7 ?', ' 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! 67! ...')
                 root.destroy()
                 sys.exit()
             else:
                 result = rec(input_width,input_length)
                 messagebox.showinfo('Answer','The area of Rectangle is ' + str(result))
-                choice = ''
                 choice = simpledialog.askstring('Having fun?','Do you wanna keep going? y/n : ')
                 while choice != 'y' and choice != 'n':
                     messagebox.showinfo('Excuse me?','what is that even mean? try again')
@@ -43,3 +42,4 @@ while True :
         messagebox.showinfo('Huh!?','There are 2 options , follow what it said')
         
     
+
