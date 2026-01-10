@@ -6,11 +6,14 @@
 
 ## เครื่องมือที่ใช้
 
-  **Language :** python 3.13.9
-  **Libraries :**  sys , tkinter ( Tk , simpledialog , messagebox )
-  **Text Editor :** Visual Studio Code
-  **AI Assistant :** Gemini 3
-  **Markdown Editor :** StackEdit.io
+ 
+
+ - **Language :** python 3.13.9
+ - **Libraries :**  sys , tkinter ( Tk , simpledialog , messagebox )
+ - **Text Editor :** Visual Studio Code
+ - **AI Assistant :** Gemini 3
+ - **Markdown Editor :** StackEdit.io
+
 ## ภาพรวมการทำงาน
 
  - เมื่อรัน script จะมีหน้า GUI ถามความพร้อมของผู้ใช้ ซึ่งมีให้ตอบ 2
