@@ -28,6 +28,8 @@
  4. หากตอบนอกเหนือจาก **y** และ **n** จะวน Loop ถามซ้ำไปเรื่อยๆ และเมื่อตอบ **"y"** ระบบจะออกจาก Loop แล้วกลับไปเล่นใหม่ แต่หากตอบ **"n"** ก็จะจบการทำงานโปรแกรม
   
 ## ปัญหาที่เจอและวิธีแก้ไข
+ปัญหาเหล่านี้คือปัญหาที่เจอทั้งตอนก่อนส่งงาน Future Skill และ หลังส่งที่นำมาปรับปรุงเพิ่มเติม
+
 
  -   **ปัญหาการจับเงื่อนไขไม่ถูกต้อง**
 
@@ -114,3 +116,39 @@
     if input_width is  None  or input_length is  None :
         messagebox.showinfo('Hmmm..','Are you tryna cancel? i will bring you to where you can end program')
         break
+##
+
+ - **ปัญหา Error ที่การแสดงผลการคูณ** 
+
+หลังจากที่มีการคำนวณ แล้วเอา result มารับ ค่า Function **rec** ที่ **return** ออกมา
+เมื่อ แสดง คำตอบที่ หน้าต่าง GUI จะเกิด TypeError เนื่องจาก massagebox จะแสดงแค่ข้อมูล Data Type ที่เป็น **string** เท่านั้น ดังนั้นจึงมีการเปลี่ยน Data Type ของ result ให้อยู่ในรูปของ string โดยใช้ 'str(result)' 
+
+    else:
+        result =  rec(input_width,input_length)
+        messagebox.showinfo('Answer','The area of Rectangle is '  +  str(result))
+##
+
+ - **ปัญหาการจับเงื่อนไขไม่ถูกต้อง (ช่วงตัดสินใจจะเล่นต่อหรือหยุด)**
+
+ใน **script** เก่ามีการถามให้ ตอบ **y** หรือ **n** ซึ่งเมื่อตอบ **n** จะจบการทำงานทันที
+แต่ใน กรณีที่จะเล่นต่อ จะสามารถตอบแบบใดก่อนได้ ซึ่งไม่เป็นไปตาม logic ที่อยากให้เป็น
+
+    choice = simpledialog.askstring('Having fun?','Do you wanna keep going? y/n : ')
+    if choice ==  'n':
+        messagebox.showinfo('Bye!','Thank you for today,see you next time')
+        root.destroy()
+        sys.exit()
+
+**วิธีแก้ปัญหาคือ** ใช้ **while loop** ที่มี **condition** มาแก้ปัญหา 
+(เหตุผลที่ไม่ใช้ **while True** เนื่องจากอยากลองฝึกเขียน **condition** เอง)
+โดยที่ไม่ว่าผู้ใช้จะพิมพ์อะไรนอกเหนือจาก **y** และ **n** จะไม่สามารถเล่นต่อได้จนกว่าจะพิมพ์ **y** หรือ **n** ในการเลือก และแม้ว่าจะกด **cancel** ก็จะไม่สามารถจบการทำงานโปรแกรมได้เช่นกัน
+
+    choice = simpledialog.askstring('Having fun?','Do you wanna keep going? y/n : ')
+    while choice !=  'y'  and choice !=  'n':
+        messagebox.showinfo('Excuse me?','what is that even mean? try again')
+        choice = simpledialog.askstring('Having fun?','So do you wanna keep going? y/n : ')
+        
+        if choice ==  'n':
+            messagebox.showinfo('Bye!','Thank you for today , see you next time')
+            root.destroy()
+            sys.exit()
