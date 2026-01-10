@@ -12,7 +12,7 @@
  - **Libraries :**  sys , tkinter ( Tk , simpledialog , messagebox )
  - **Text Editor :** Visual Studio Code
  - **AI Assistant :** Gemini 3
- - **Markdown Editor :** StackEdit.io
+ - **Markdown Editor :** StackEdit.io 
 
 ## ภาพรวมการทำงาน
 
@@ -33,7 +33,7 @@
 
  -   **ปัญหาการจับเงื่อนไขไม่ถูกต้อง**
 
-เมื่อผู้ใช้ พิมพ์ **y** ระบบจะไปขั้นตอนต่อไปตามปกติ หรือ **n**จะจบการทำงานของโปรแกรม   แต่ **ปัญหาที่เกิดคือ**เมื่อผู้ใช้พิมพ์ตัวอื่นที่ไม่ใช่ **y** หรือ **n** หรือกด cancelที่ให้ค่าเป็น NoneType ระบบจบการทำงานทันทีเนื่องจาก คำสั่ง else: ที่เป็น true เสมอ หากไม่ใช่ **y**  ซึ่งไม่เป็นไปตาม logicที่ผมอยากให้เป็น 
+เมื่อผู้ใช้ พิมพ์ **y** ระบบจะไปขั้นตอนต่อไปตามปกติ หรือ **n** จะจบการทำงานของโปรแกรม   แต่ **ปัญหาที่เกิดคือ**เมื่อผู้ใช้พิมพ์ตัวอื่นที่ไม่ใช่ **y** หรือ **n** หรือกด cancelที่ให้ค่าเป็น NoneType ระบบจบการทำงานทันทีเนื่องจาก คำสั่ง else: ที่เป็น true เสมอ หากไม่ใช่ **y**  ซึ่งไม่เป็นไปตาม logic ที่ผมอยากให้เป็น 
 
     openBox = simpledialog.askstring('Rectangle calculate','Are you ready? y/n :')
     if openBox == 'y':
@@ -152,3 +152,11 @@
             messagebox.showinfo('Bye!','Thank you for today , see you next time')
             root.destroy()
             sys.exit()
+
+## สิ่งที่ได้เรียนรู้ใน Project
+
+ - **การใช้งาน Libraries  module** 
+ ได้ลองใช้ import library ที่เกี่ยวข้อง และ ดึง module ของ library tkinter มาใช้ โดยไม่ต้อง import มาทั้งหมด ได้ลองใช้ API เพื่อใช้คำสั่งในการเขียนของ library tkinter และ sys เรียนรู้ว่าบาง module มีข้อจำกัด เช่น massagebox ที่รับ parameter ได้แค่ **string** 
+ 
+ - **ฝึกวางลำดับการทำงาน**    
+ ได้ทำความเข้าใจ logic การทำงานของ python และได้เรียนรู้การเขียนลักษณะการเขียน **syntax** **Python** เข้าใจภาพรวมคร่าวๆลักษณะภาษาของ Python ที่ทำงานแบบ **OOP(Object-Oriented Programming)** ที่มองเป็นเหมือนวัตถุเป็นจุดศูนย์รวมข้อมูลที่สามารถนำมาใช้งานซ้ำๆได้ เช่น **Function rec** ที่ได้เขียนคำนวณสูตรหาพื้นที่สี่เหลี่ยมผืนผ้า
