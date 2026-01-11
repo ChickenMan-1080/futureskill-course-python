@@ -177,15 +177,17 @@
  **OOP(Object-Oriented Programming)** ที่มองเป็นเหมือนวัตถุเป็นจุดศูนย์รวมข้อมูลที่ลดความซับซ้อนของโค้ด และ สามารถนำมาใช้งานซ้ำได้ เช่น **Function rec** ที่ parameter รับค่า **Numeric** เพื่อคำนวณสูตรหาพื้นที่สี่เหลี่ยมผืนผ้า
 
    
-       ''' def rec(width,length):
-               loresult = width * length
-               return loresult '''
+   
+
+    def rec(width,length):
+        loresult = width * length
+        return loresult 
 
 และการเรียกใช้ Function ที่สามารถนำมาใช้ต่อได้โดยการใช้ตัวแปรมารับค่า return ของ Function เปิดเอาคำตอบนั้นไปแสดงผลบนหน้า GUI 
 
-    '''
+    
         result =  rec(input_width,input_length)
-        messagebox.showinfo('Answer','The area of Rectangle is '  +  str(result))'''
+        messagebox.showinfo('Answer','The area of Rectangle is '  +  str(result))
         
 
 ##
