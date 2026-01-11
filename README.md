@@ -35,8 +35,8 @@
 
 ## ขั้นตอนการติดตั้งและวิธีใช้
 
- - **การติดตั้งโปรแกรม** [คลิกที่นี่เพื่อโหลด](https://github.com/ChickenMan-1080/futureskill-course-python/releases/tag/v1.0.0) 
- - **การเปิดโปรแกรม** เมื่อติดตั้งไฟล์ .exe มาแล้วสามารถคลิกเปิดได้เลย *(หากติด Windows Defender ขึ้นเตือน ให้เลือก more info แล้ว run anyway	)*
+ - **การติดตั้งโปรแกรม :** [คลิกที่นี่เพื่อโหลด](https://github.com/ChickenMan-1080/futureskill-course-python/releases/tag/v1.0.0) 
+ - **การเปิดโปรแกรม :** เมื่อติดตั้งไฟล์ .exe มาแล้วสามารถคลิกเปิดได้เลย *(หากติด Windows Defender ขึ้นเตือน ให้เลือก more info แล้ว run anyway	)*
 
   
 ## ปัญหาที่เจอและวิธีแก้ไข
